@@ -1,0 +1,158 @@
+*,
+*::before,
+*:: after{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+	background-image: url(https://images.unsplash.com/photo-1650649703236-d06bab9d2250?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+	background-repeat:  no-repeat;
+ background-size: cover;
+ /*filter: blur(3px);*/
+ 
+
+}
+html{
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.main-div{
+ height: 100vh;
+ width: 100vw;
+ /*margin: auto;
+ margin-top: 70px;*/
+ display: grid;
+ place-items: center;
+}
+.music-container{
+	
+	width: 350px;
+	/*margin: auto;*/
+	background-color: #FFED80;
+	text-align: center ;
+	height: 550px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 4px 6px lightyellow;
+
+}
+.music-container #title{
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	word-spacing: 0.5rem;
+	color: #130C09;
+	margin: 2rem 0 0.5rem 0;
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-shadow: 0 0.3rem 0.5rem #6D6460;
+}
+.music-container #artist{
+	letter-spacing: 0.2rem;
+	word-spacing: 0.5rem;
+	color: #130C09;
+	text-shadow: 0 0.3rem 0.5rem #6D6460;
+	font-size: 1.5rem;
+	margin-bottom: 4rem;
+	font-weight: 500;
+
+}
+
+
+.img_container{
+ height: 200px;
+ width: 200px;
+ 
+ margin: auto;
+ 
+}
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+box-shadow: 0 1.2rem 3rem 0.5rem #DAD245;
+border-radius: 50%;
+}
+.music-controls{
+  width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
+
+
+}
+.music-controls .fa{
+	color:#130C09 ;
+	font-size: 2rem;
+	cursor: pointer;
+	filter: drop-shadow(0 1.2rem 3rem 0.5rem );
+}
+.music-controls .main-button{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background-color: #111;
+	color: #f6f6f6;
+	/*margin-top: 2rem;*/
+	
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.music-controls .fa:hover{
+	background-color:floralwhite;
+	color:#3A3510 ;
+	box-shadow: 0 1rem 2rem 0.2rem #90894F;
+}
+.animation{
+ animation: rotatePlayer 3s linear infinite;
+}
+@keyframes rotatePlayer{
+  from{
+  		transform: rotate(0deg);
+  }to{
+  	transform: rotate(360deg);
+  }
+}
+/*progress style*/
+
+.progressbar-container{
+	width: 100%;
+	height: auto;
+	padding: 1rem 0;
+	margin-top: 1rem;
+}
+.progress-div{
+	width: 90%;
+	height: 0.5rem;
+	box-shadow: 0 1px 2px #5047B0 ;
+	border-radius: 4rem;
+	position: relative;
+	margin-top: 0.5rem;
+	margin-left: 1rem;
+	transition: all 1s linear;
+	cursor: pointer;
+	appearance: none;
+}
+.progress{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: black;
+		border-radius: 4rem;
+	  transition: all 1s linear;
+	  cursor: pointer;
+  	 appearance: none;
+}
+.progress-duration-meter{
+		display: flex;
+		margin-left: 8px;
+		margin-right: 8px;
+		justify-content: space-between;
+}
+
+

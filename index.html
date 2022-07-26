@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Player</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Oswald:wght@200&family=Roboto+Mono:wght@200&family=Roboto:ital,wght@0,100;1,300&family=Source+Sans+Pro:wght@300;400;600&family=Tapestry&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="E:\frontend projects\music player\style.css">
+</head>
+<body>
+	<div class = "main-div">
+		<div class = "music-container">
+			<h2 id="title">Pent Straight</h2>
+			<h3 id ="artist">Gurnaam Bhullar</h3>
+			<div class = "img_container">
+				<img src="https://images.unsplash.com/photo-1525362081669-2b476bb628c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+			</div>
+			<audio src = "D:\Users\DELL\Downloads\Pent Straight.mp3" ></audio>
+			<!-- progress  -->
+			<div class = "progressbar-container" id ="proegress-container">
+				<div class = "progress-duration-meter">
+					<div id="current-time">
+						0.00
+					</div>
+					<div id = "duration">3.32</div>
+				</div>
+				<div class = "progress-div"id="progress-div">
+					<div class = "progress" id="progress">
+				</div>
+				</div>
+				
+			</div>
+
+			<!-- controls -->
+			<div class = "music-controls">
+				<i class="fa fa-backward" id = "prev" title="prev"></i>
+				<i class="fa fa-play main-button" id="play" title="play" ></i>
+				<i class="fa fa-forward" id="next" title="next"></i>
+			</div>
+		</div>
+	</div>
+	<script src="E:\frontend projects\music player\script.js"></script>
+</body>
+</html>
